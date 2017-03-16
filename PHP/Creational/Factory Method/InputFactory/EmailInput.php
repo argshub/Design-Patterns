@@ -11,11 +11,15 @@ namespace InputFactory;
 
 class EmailInput extends InputManager
 {
-    function __construct($inputName) {
+    private $inputValue, $placeholder;
+
+    function __construct(string $inputName, string $value, string $placeholder) {
         parent::__construct($inputName);
+        $this->inputValue = $value;
+        $this->placeholder = $placeholder;
     }
 
     function getInputData(): string {
-        return "\t<input type='email' name='{$this->inputName}' placeholder='Enter Email Here'/>\n";
+        return "\t<input type='email' name='{$this->inputName}' value='{$this->inputValue}' placeholder='{$this->placeholder}'/>\n";
     }
 }

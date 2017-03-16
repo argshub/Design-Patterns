@@ -17,6 +17,5 @@ abstract class InputManager
         $this->inputName = $inputName;
     }
 
-
     abstract function getInputData(): string ;
 }
