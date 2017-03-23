@@ -15,9 +15,10 @@ class FileReader
 
     function __construct(string $filename) {
         $this->filename = $filename;
+        print "Reading file name: {$filename}\n";
     }
 
     function readFileData() {
-        print "Reading file data of {$this->filename} \n";
+        print "file data: {$this->filename} \n";
     }
 }

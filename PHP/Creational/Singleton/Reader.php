@@ -14,7 +14,7 @@ class Reader
     private static $instance;
 
     static function readData(string $filename) {
-        return self::$instance ? self::$instance : new FileReader($filename);
+        return self::$instance ? self::$instance : self::$instance = new FileReader($filename);
     }
 
 }
