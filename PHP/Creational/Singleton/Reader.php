@@ -13,6 +13,8 @@ class Reader
 {
     private static $instance;
 
+    private function __construct() {}
+
     static function readData(string $filename) {
         return self::$instance ? self::$instance : self::$instance = new FileReader($filename);
     }
