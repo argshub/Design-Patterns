@@ -14,9 +14,7 @@ public class StateTest {
     
     public static void main(String arg[]) {
         Machine machine = new Machine();
-        MachineState state = new MachineOnState(machine);
-        state = new MachineOffState(machine);
-        
+       
         machine.click();
         machine.click();
         machine.click();
