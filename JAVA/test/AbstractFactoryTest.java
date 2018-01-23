@@ -8,7 +8,7 @@ import Creational.AbstractFactory.AppleFactory;
  *
  * @author argshub
  */
-public class AbstrcatFactoryTest {
+public class AbstractFactoryTest {
     
     
     public static void main(String arg[]) {
